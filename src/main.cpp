@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
 
     for (int i = 1; i < argc; i++) {
         if (std::string(argv[i]) == "--no-cpu") {
-            runCPU = true;
+            runCPU = false;
             std::cout << "Flag --no-cpu detected: Skipping CPU implementation." << std::endl;
         }
     }
